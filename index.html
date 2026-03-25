@@ -111,9 +111,13 @@ Ultimately, my goal is to advance embodied agents toward human-level adaptabilit
     <br>
     <em>CVPR</em>, 2026
     <br>
-    <a href="https://haian-jin.github.io/ZipMap/">project page</a> /
-    <a href="https://arxiv.org/abs/2603.04385">arXiv</a> /
-    <a href="https://github.com/Haian-Jin/ZipMap">code</a>
+                <a href="https://arxiv.org/abs/2411.01284">arXiv</a>
+                /
+                <a href="https://sites.google.com/view/hodor-corl24">project page</a>
+                /
+                <a href="https://drive.google.com/file/d/1Ixt3LBgxuSdp3g5lp2VNskAuaTH6Vc-Z/view" >video</a>
+                /
+                <a href= >code</a>
     <p></p>
     <p>
 		Test-time training lets you quickly compress an entire image collection into a compact model and thereby achieve linear-time 3D reconstruction.
@@ -122,483 +126,67 @@ Ultimately, my goal is to advance embodied agents toward human-level adaptabilit
 </tr>
 
 
-<tr onmouseout="radmesh_stop()" onmouseover="radmesh_start()" bgcolor="#ffffd0">
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <div class="one">
-      <div class="two" id='radmesh_image'>
-        <img src='images/radmesh_after.jpg' width=100%>
-      </div>
-      <img src='images/radmesh_before.jpg' width=100%>
-    </div>
-    <script type="text/javascript">
-      function radmesh_start() {
-        document.getElementById('radmesh_image').style.opacity = "1";
-      }
 
-      function radmesh_stop() {
-        document.getElementById('radmesh_image').style.opacity = "0";
-      }
-      radmesh_stop()
-    </script>
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <a href="https://half-potato.gitlab.io/rm/">
-      <span class="papertitle">Radiance Meshes for Volumetric Reconstruction</span>
-    </a>
-    <br>
-    <a href="https://half-potato.gitlab.io/">Alexander Mai</a>,
-    <a href="https://github.com/Shmaug">Trevor Hedstrom</a>,
-    <a href="https://grgkopanas.github.io/">George Kopanas</a>, <br>
-	<a href="https://mediatech.aalto.fi/~janne/index.php">Janne Kontkanen</a>, 
-    <a href="https://jacobsschool.ucsd.edu/faculty/profile?id=253">Falko Kuester</a>,
-    <strong>Jonathan T. Barron</strong>
-    <br>
-    <em>CVPR</em>, 2026
-    <br>
-    <a href="https://half-potato.gitlab.io/rm/">project page</a>
-    /
-    <a href="https://arxiv.org/abs/2512.04076">arXiv</a>
-    <p></p>
-    <p>
-	Parameterizing a scene with a Delaunay tetrahedralization and a neural field yields a scene representation that is accurate, fast to render, easy to edit, and backwards-compatible.
-    </p>
-  </td>
-</tr>
-
-<tr onmouseout="nexf_stop()" onmouseover="nexf_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='nexf_image'>
-					  <img src='images/nexf_after.jpg' width=100%>
-					</div>
-          <img src='images/nexf_before.jpg' width=100%>
-        </div>
-        <script type="text/javascript">
-          function nexf_start() {
-            document.getElementById('nexf_image').style.opacity = "1";
-          }
-
-          function nexf_stop() {
-            document.getElementById('nexf_image').style.opacity = "0";
-          }
-          nexf_stop()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://m-niemeyer.github.io/nexf/">
-          <span class="papertitle">NExF: Learning Neural Exposure Fields for View Synthesis</span>
-        </a>
-        <br>
-        <a href="https://m-niemeyer.github.io/">Michael Niemeyer</a>,
-        <a href="https://campar.in.tum.de/Main/FabianManhardt">Fabian Manhardt</a>,
-        <a href="http://www.lix.polytechnique.fr/Labo/Marie-Julie.RAKOTOSAONA/">Marie-Julie Rakotosaona</a>,
-        <a href="https://moechsle.github.io">Michael Oechsle</a>,
-        <a href="https://ait.ethz.ch/people/ctsalico">Christina Tsalicoglou</a>,
-        <a href="https://scholar.google.com/citations?user=ml3laqEAAAAJ&hl=ja">Keisuke Tateno</a>,
-        <strong>Jonathan T. Barron</strong>,
-        <a href="https://federicotombari.github.io/">Federico Tombari</a>
-        <br>
-        <em>NeurIPS</em>, 2025
-        <br>
-        <a href="https://m-niemeyer.github.io/nexf/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2510.08279">arXiv</a>
-        <p></p>
-        <p>
-		Learning a neural field that optimizes exposure for each 3D point enables high-quality 3D-consistent view synthesis despite extreme exposure variation during capture.
-        </p>
-      </td>
-    </tr>
-	
-    <tr onmouseout="bolt3d_stop()" onmouseover="bolt3d_start()"  bgcolor="#ffffd0">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='bolt3d_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/bolt3d.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-
-          </video></div>
-          <img src='images/bolt3d.jpg' width="160">
-        </div>
-        <script type="text/javascript">
-          function bolt3d_start() {
-            document.getElementById('bolt3d_image').style.opacity = "1";
-          }
-
-          function bolt3d_stop() {
-            document.getElementById('bolt3d_image').style.opacity = "0";
-          }
-          bolt3d_stop()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://szymanowiczs.github.io/bolt3d">
-          <span class="papertitle">Bolt3D: Generating 3D Scenes in Seconds</span>
-        </a>
-        <br>
-        <a href="https://szymanowiczs.github.io/">Stanislaw Szymanowicz</a>,
-        <a href="https://jasonyzhang.com">Jason Y. Zhang</a>,
-        <a href="https://pratulsrinivasan.github.io">Pratul Srinivasan</a>,
-        <a href="https://ruiqigao.github.io">Ruiqi Gao</a>,
-        <a href="https://github.com/ArthurBrussee">Arthur Brussee</a>,
-        <a href="https://holynski.org">Aleksander Holynski</a>,
-        <a href="https://ricardomartinbrualla.com">Ricardo Martin-Brualla</a>,
-		<strong>Jonathan T. Barron</strong>,
-        <a href="https://henzler.github.io">Philipp Henzler</a>
-        <br>
-        <em>ICCV</em>, 2025
-        <br>
-        <a href="https://szymanowiczs.github.io/bolt3d">project page</a>
-        /
-        <a href="https://szymanowiczs.github.io/bolt3d">arXiv</a>
-        <p></p>
-        <p>
-		By training a latent diffusion model to directly output 3D Gaussians we enable fast (~6 seconds on a single GPU) feed-forward 3D scene generation.
-        </p>
-      </td>
-    </tr>
-
-    <tr onmouseout="ever_stop()" onmouseover="ever_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='ever_image'>
-					  <img src='images/ever_after.png' width=100%>
-					</div>
-          <img src='images/ever_before.png' width=100%>
-        </div>
-        <script type="text/javascript">
-          function ever_start() {
-            document.getElementById('ever_image').style.opacity = "1";
-          }
-
-          function ever_stop() {
-            document.getElementById('ever_image').style.opacity = "0";
-          }
-          ever_stop()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://half-potato.gitlab.io/posts/ever/">
-			<span class="papertitle">EVER: Exact Volumetric Ellipsoid Rendering for Real-time View Synthesis
-</span>
-        </a>
-        <br>
-				<a href="https://half-potato.gitlab.io/">Alexander Mai</a>, 
-				<a href="https://phogzone.com/">Peter Hedman</a>,
-				<a href="https://grgkopanas.github.io/">George Kopanas</a>,
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-        <a href="https://scholar.google.com/citations?user=ozNFrecAAAAJ&hl=en">David Futschik</a>,
-        <a href="https://xharlie.github.io/">Qiangeng Xu</a>,
-        <a href="https://jacobsschool.ucsd.edu/faculty/profile?id=253">Falko Kuester</a>,
-				<strong>Jonathan T. Barron</strong>,
-        <a href="https://www.zhangyinda.com/">Yinda Zhang</a>
-				<br>
-        <em>ICCV</em>, 2025 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-        <br>
-        <a href="https://half-potato.gitlab.io/posts/ever/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2410.01804">arXiv</a>
-        <p></p>
-        <p>
-				Raytracing constant-density ellipsoids yields more accurate and flexible radiance fields than splatting Gaussians, and still runs in real-time.
-        </p>
-      </td>
-    </tr>
-
-
-    <tr onmouseout="cat4d_stop()" onmouseover="cat4d_start()" bgcolor="#ffffd0">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='cat4d_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/cat4d.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/cat4d.jpg' width="160">
-        </div>
-        <script type="text/javascript">
-          function cat4d_start() {
-            document.getElementById('cat4d_image').style.opacity = "1";
-          }
-
-          function cat4d_stop() {
-            document.getElementById('cat4d_image').style.opacity = "0";
-          }
-          cat4d_stop()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://cat-4d.github.io/">
-			<span class="papertitle">CAT4D: Create Anything in 4D with Multi-View Video Diffusion Models
-</span>
-        </a>
-        <br>
-				<a href="https://www.cs.columbia.edu/~rundi/">Rundi Wu</a>,
-				<a href="https://ruiqigao.github.io/">Ruiqi Gao</a>,
-				<a href="https://poolio.github.io/">Ben Poole</a>,
-				<a href="https://alextrevithick.github.io/">Alex Trevithick</a>,
-				<a href="https://www.cs.columbia.edu/~cxz/index.htm/">Changxi Zheng</a>,
-				<strong>Jonathan T. Barron</strong>,
-				<a href="https://holynski.org/">Aleksander Holynski</a>
-        <br>
-        <em>CVPR</em>, 2025 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-        <br>
-        <a href="https://cat-4d.github.io/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2411.18613">arXiv</a>
-        <p></p>
-        <p>
-				An approach for turning a video into a 4D radiance field that can be rendered in real-time. When combined with a text-to-video model, this enables text-to-4D.
-        </p>
-      </td>
-    </tr>
-
-
-    <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='r2r_image'><video  width=100% muted autoplay loop>
-          <source src="images/r2r.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/r2r.jpg' width=100%>
-        </div>
-        <script type="text/javascript">
-          function r2r_start() {
-            document.getElementById('r2r_image').style.opacity = "1";
-          }
-
-          function r2r_stop() {
-            document.getElementById('r2r_image').style.opacity = "0";
-          }
-          r2r_stop()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://relight-to-reconstruct.github.io/">
-          <span class="papertitle">Generative Multiview Relighting for
-3D Reconstruction under Extreme Illumination Variation</span>
-        </a>
-        <br>
-        <a href="https://hadizayer.github.io/">Hadi Alzayer</a>,
-        <a href="https://henzler.github.io/">Philipp Henzler</a>,
-				<strong>Jonathan T. Barron</strong>, 
-        <a href="https://jbhuang0604.github.io/">Jia-Bin Huang</a>,
-        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>, 
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>
-        <br>
-        <em>CVPR</em>, 2025 &nbsp <font color=#FF8080><strong>(Highlight)</strong></font>
-        <br>
-        <a href="https://relight-to-reconstruct.github.io/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2412.15211">arXiv</a>
-        <p></p>
-        <p>
-				Images taken under extreme illumination variation can be made consistent with diffusion, and this enables high-quality 3D reconstruction.
-        </p>
-      </td>
-    </tr>
-
-
-    <tr onmouseout="simvs_stop()" onmouseover="simvs_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='simvs_image'><video  width=100% muted autoplay loop>
-          <source src="images/simvs.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/simvs.jpg' width=100%>
-        </div>
-        <script type="text/javascript">
-          function simvs_start() {
-            document.getElementById('simvs_image').style.opacity = "1";
-          }
-
-          function simvs_stop() {
-            document.getElementById('simvs_image').style.opacity = "0";
-          }
-          simvs_stop()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://alextrevithick.github.io/simvs/">
-          <span class="papertitle">SimVS: Simulating World Inconsistencies for Robust View Synthesis</span>
-        </a>
-        <br>
-        <a href="https://alextrevithick.github.io/">Alex Trevithick</a>,
-        <a href="https://scholar.google.com/citations?user=-KSDNZQAAAAJ&hl=en">Roni Paiss</a>,
-        <a href="https://henzler.github.io/">Philipp Henzler</a>,
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-        <a href="https://www.cs.columbia.edu/~rundi/">Rundi Wu</a>,
-        <a href="https://hadizayer.github.io/">Hadi Alzayer</a>,
-        <a href="https://ruiqigao.github.io/">Ruiqi Gao</a>,
-        <a  href="https://poolio.github.io/">Ben Poole</a>,
-				<strong>Jonathan T. Barron</strong>, 
-        <a href="https://holynski.org/">Aleksander Holynski</a>,
-        <a href="https://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>,
-        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>
-        <br>
-        <em>CVPR</em>, 2025
-        <br>
-        <a href="https://alextrevithick.github.io/simvs/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2412.07696">arXiv</a>
-        <p></p>
-        <p>
-        Simulating the world with video models lets you make inconsistent captures consistent.
-        </p>
-      </td>
-    </tr>
-
-
-
-            <tr>
-              <td style="padding:16px;width:20%;vertical-align:middle">
-                <img src="images/prl.jpg" alt="prl" width="160" height="160">
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <a href="https://drive.google.com/file/d/13rVuJpcytRdLYCnKpq46g7B7IzSrPQ2P/view?usp=sharing">
-                  <span class="papertitle">Parallelizing Reinforcement Learning</span>
-                </a>
-                <br>
-                <strong>Jonathan T. Barron</strong>, <a href="http://www.eecs.berkeley.edu/~dsg/">Dave Golland</a>, <a href="http://www.cs.berkeley.edu/~nickjhay/">Nicholas J. Hay</a>
-                <br>
-                <em>Technical Report</em>, 2009
-                <br>
-                <a href="data/BarronPRL2009.bib">bibtex</a>
-                <p>Markov Decision Problems which lie in a low-dimensional latent space can be decomposed, allowing modified RL algorithms to run orders of magnitude faster in parallel.</p>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:16px;width:20%;vertical-align:middle">
-                <img src="images/bd_promo.jpg" alt="blind-date" width="160" height="160">
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <a href="https://drive.google.com/file/d/1PQjzKgFcrAesMIDJr-WDlCwuGUxZJZwO/view?usp=sharing">
-                  <span class="papertitle">Blind Date: Using Proper Motions to Determine the Ages of Historical Images</span>
-                </a>
-                <br>
-                <strong>Jonathan T. Barron</strong>, <a href="http://cosmo.nyu.edu/hogg/">David W. Hogg</a>, <a href="http://www.astro.princeton.edu/~dstn/">Dustin Lang</a>, <a href="http://cs.nyu.edu/~roweis/">Sam Roweis</a>
-                <br>
-                <em>The Astronomical Journal</em>, 136, 2008
-                <p>Using the relative motions of stars we can accurately estimate the date of origin of historical astronomical images.</p>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:16px;width:20%;vertical-align:middle">
-                <img src="images/clean_promo.jpg" alt="clean-usnob" width="160" height="160">
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <a href="https://drive.google.com/file/d/1YvRx-4hrZoCk-nl6OgVJZlHAqOiN5hWq/view?usp=sharing">
-                  <span class="papertitle">Cleaning the USNO-B Catalog Through Automatic Detection of Optical Artifacts</span>
-                </a>
-                <br>
-                <strong>Jonathan T. Barron</strong>, <a href="http://stumm.ca/">Christopher Stumm</a>, <a href="http://cosmo.nyu.edu/hogg/">David W. Hogg</a>, <a href="http://www.astro.princeton.edu/~dstn/">Dustin Lang</a>, <a href="http://cs.nyu.edu/~roweis/">Sam Roweis</a>
-                <br>
-                <em>The Astronomical Journal</em>, 135, 2008
-                <p>We use computer vision techniques to identify and remove diffraction spikes and reflection halos in the USNO-B Catalog.</p>
-                <p>In use at <a href="http://www.astrometry.net">Astrometry.net</a></p>
-              </td>
-            </tr>
-
+			  
           </tbody></table>
-
           
-					<table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;"><tbody>
+          <hr style="border: none; border-top: 1px solid #ca0783; margin: 0px 0;">
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
             <tr>
               <td>
-                <h2>Miscellanea</h2>
+                <h2 class="name" style="font-size: 24px; font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-weight: 300;">
+                  Service</h2>
+                <p>
+   
+                  <b>Mentorship</b>: <a href="https://www.ethanfoong.com/" class="black-link">Ethan Foong</a><br>
+                  <b>Conference reviewer</b>: CoRL<br>
+                  <b>Workshop reviewer</b>: NeurIPS, ICRA, RSS<br>
+                  <b>Teaching Assistant at USC</b>: CSCI 103: Introduction to Programming, Fa25.<br>
+                  <b>Teaching Assistant at UPenn</b>: <a href="https://github.com/MEAM520" class="black-link">MEAM 5200: Introduction to Robotics</a>, Sp23; CIS 5200: Machine Learning, Fa23; CIS 5190, Applied Machine Learning, Sp24.<br>
+
+                  <b><a href="https://fife.cis.upenn.edu" class="black-link">Fife-Penn Python Club</a></b>: Instructor in Spring 23 at G.W. Carver High School.
+                </p>
               </td>
             </tr>
           </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            
-           
-            <tr>
-              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
-						     <div class="colored-box" style="background-color: #fcb97d;">
-								 <h2>Micropapers</h2>
-								 </div>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <a href="https://arxiv.org/abs/2112.11687">Squareplus: A Softplus-Like Algebraic Rectifier</a>
-                <br>
-                <a href="https://arxiv.org/abs/2010.09714">A Convenient Generalization of Schlick's Bias and Gain Functions</a>
-                <br>
-                <a href="https://arxiv.org/abs/1704.07483">Continuously Differentiable Exponential Linear Units</a>
-                <br>
-                <a href="https://jonbarron.info/data/cvpr2023_llm_workshop_annotated.pdf">Scholars & Big Models: How Can Academics Adapt?</a>
-              </td>
-            </tr>
 
-
+          <hr style="border: none; border-top: 1px solid #ca0783; margin: 0px 0;">
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
             <tr>
-              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
-						     <div class="colored-box" style="background-color: #aaba9e;">
-								 <h2>Recorded Talks</h2>
-								 </div>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:center">
-                <a href="https://www.youtube.com/watch?v=hFlF33JZbA0">Radiance Fields and the Future of Generative Media, 2025</a><br>				  
-                <a href="https://www.youtube.com/watch?v=h9vq_65eDas">View Dependent Podcast, 2024</a><br>
-                <a href="https://www.youtube.com/watch?v=4tDhYsFuEqo">Bay Area Robotics Symposium, 2023
-</a><br>
-                <a href="https://youtu.be/TvWkwDYtBP4?t=7604">EGSR Keynote, 2021</a><br>
-				<a href="https://www.youtube.com/watch?v=nRyOzHpcr4Q">TUM AI Lecture Series, 2020</a><br>
-				<a href="https://www.youtube.com/watch?v=HfJpQCBTqZs">Vision & Graphics Seminar at MIT, 2020</a>
+              <td>
+                <h2 class="name" style="font-size: 24px; font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-weight: 300;">
+                  Awards</h2>
+                <p>
+                  <b>CoRL 2024 Travel Grant</b>, 2024<br>
+                  <b>Best Conference Paper Award</b> ICRA, 2024<br>
+                </p>
               </td>
             </tr>
-
-            <tr>
-              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
-						     <div class="colored-box" style="background-color: #c6b89e;">
-								 <h2>Academic Service</h2>
-								 </div>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:center">
-                <a href="https://iccv.thecvf.com/">Lead Area Chair, ICCV 2025</a>
-                <br>
-                <a href="https://cvpr.thecvf.com/Conferences/2025/Organizers">Lead Area Chair, CVPR 2025</a>
-                <br>
-                <a href="https://cvpr.thecvf.com/Conferences/2024/Organizers">Area Chair, CVPR 2024</a>
-                <br>
-                <a href="https://cvpr2023.thecvf.com/Conferences/2023/Organizers">Demo Chair, CVPR 2023</a>
-                <br>
-                <a href="https://cvpr2022.thecvf.com/area-chairs">Area Chair, CVPR 2022</a>
-                <br>
-                <a href="http://cvpr2021.thecvf.com/area-chairs">Area Chair & Award Committee Member, CVPR 2021</a>
-                <br>
-                <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>
-                <br>
-                <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>
-              </td>
-            </tr>
-						
-						
-           
-            <tr>
-              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
-						     <div class="colored-box" style="background-color: #edd892;">
-								 <h2>Teaching</h2>
-								 </div>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:center">
-                <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student Instructor, CS188 Spring 2011</a>
-                <br>
-                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student Instructor, CS188 Fall 2010</a>
-                <br>
-                <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition</a>
-              </td>
-            </tr>
-            
           </tbody></table>
+
+          <hr style="border: none; border-top: 1px solid #ca0783; margin: 0px 0;">
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+            <tr>
+              <td>
+                <h2 class="name" style="font-size: 24px; font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-weight: 300;">
+                  Media</h2>
+                <p>
+                  <a href="https://www.grasp.upenn.edu/news/2024-seas-graduate-awards-ceremony/" class="black-link">The 2024 SEAS Graduate Awards Ceremony Spotlight</a>
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          
+
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:0px">
                 <br>
+				  <p style="text-align:right;font-size:small;">
+                  				  Last updated: Mar. 26, 2026
+                </p>
                 <p style="text-align:right;font-size:small;">
-                  Feel free to steal this website's <a href="https://github.com/jonbarron/jonbarron_website">source code</a>. <strong>Do not</strong> scrape the HTML from this page itself, as it includes analytics tags that you do not want on your own website &mdash; use the github code instead. Also, consider using <a href="https://leonidk.com/">Leonid Keselman</a>'s <a href="https://github.com/leonidk/new_website">Jekyll fork</a> of this page.
+                  Inspired by the template <a href="https://github.com/jonbarron/jonbarron_website">here</a>.
                 </p>
               </td>
             </tr>
